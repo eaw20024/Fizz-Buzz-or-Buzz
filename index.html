@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fizz Buzz</title>
+	<link href='http://fonts.googleapis.com/css?family=Parisienne|Lily+Script+One|Luckiest+Guy|Rochester|Leckerli+One|Carter+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abel|Poiret+One|Raleway|Titillium+Web' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div id="container">
+		<img id="logo" src="img/FizzBuzzLogo.png">
+		<h1>Fizz Buzz</h1>
+		<hr>
+	
+		<div id="fizzArea">
+			<br><p id="instructions">Enter a number between 1 &amp 100 in the "text-field" and press "Let's Fizz"</p><br>
+			<p id="instructions_fizz">For multiples of three "Lets Fizz" will print “Fizz” instead of the number and for the multiples of five it will print “Buzz”. For numbers which are multiples of both three and five it will print “FizzBuzz”."</p>
+
+
+			<div class="input" onsubmit="return false;">
+				<input type="text" id="numberBox" maxlength="3" placeholder="Enter number here!">
+				<br><input type="button" value="Let's Fizz" id="submitButton">
+			</div>
+
+			<div class="bustArea"></div>
+					<div class="notifications">
+					  <p id="integer">Uh-Oh, we dont like "Decimals" around here!</p>
+					</div>
+			</div>
+		</div>
+	</div>
+  
+	<footer>
+		<h3>Designed By Eric Washington</h3>
+	</footer>	
+</body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
